@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Horizonte - Nossa História</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        horizonteBlue: '#0f2454',
+                        horizonteOrange: '#f97316'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+
+    <!-- Cabeçalho -->
+    <header class="bg-horizonteBlue text-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center space-x-2 mb-4 md:mb-0">
+                <span class="text-2xl font-bold tracking-wider">Portal <span class="text-horizonteOrange">Horizonte</span></span>
+            </div>
+            <nav class="flex space-x-6 text-sm font-medium">
+                <a href="index.html" class="hover:text-horizonteOrange transition">Início</a>
+                <a href="nossa-historia.html" class="text-horizonteOrange border-b-2 border-horizonteOrange pb-1 transition">Nossa História</a>
+                <a href="codigo-etica.html" class="hover:text-horizonteOrange transition">Código de Ética</a>
+                <a href="contato.html" class="hover:text-horizonteOrange transition">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="flex-grow container mx-auto px-4 py-12 max-w-4xl">
+        <h1 class="text-3xl md:text-4xl font-bold text-horizonteBlue mb-6 border-l-4 border-horizonteOrange pl-3">Nossa História</h1>
+        
+        <div class="bg-white rounded-xl shadow-md p-6 md:p-10 mb-10 space-y-6 text-gray-700 leading-relaxed">
+            <p>
+                Fundado com o propósito de levar informação clara, independente e de alta qualidade para o público, o <strong>Portal Horizonte</strong> consolidou-se ao longo dos anos como uma referência essencial no jornalismo digital.
+            </p>
+            <p>
+                Nossa jornada começou com uma equipe enxuta, unida pela paixão por contar histórias reais e relevantes. Com muito rigor técnico e compromisso inegável com a verdade, expandimos nossa cobertura para abranger economia, tecnologia, cultura, política e muito mais.
+            </p>
+            <p>
+                Hoje, orgulhamo-nos de alcançar milhões de pessoas todos os meses, mantendo sempre o mesmo padrão ético e a proximidade com os nossos leitores que nos trouxeram até aqui.
+            </p>
+        </div>
+
+        <!-- Estatísticas / Indicadores -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+            <div class="bg-horizonteBlue text-white p-6 rounded-xl shadow-md">
+                <span class="block text-4xl font-extrabold text-horizonteOrange mb-2">8+</span>
+                <span class="text-sm uppercase tracking-wider font-semibold">Anos de Histórias</span>
+            </div>
+            <div class="bg-horizonteBlue text-white p-6 rounded-xl shadow-md">
+                <span class="block text-4xl font-extrabold text-horizonteOrange mb-2">4.5M</span>
+                <span class="text-sm uppercase tracking-wider font-semibold">Leitores Mensais</span>
+            </div>
+            <div class="bg-horizonteBlue text-white p-6 rounded-xl shadow-md">
+                <span class="block text-4xl font-extrabold text-horizonteOrange mb-2">120+</span>
+                <span class="text-sm uppercase tracking-wider font-semibold">Jornalistas Especializados</span>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-horizonteBlue text-white py-8 mt-12">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-lg font-bold mb-2">Portal <span class="text-horizonteOrange">Horizonte</span></p>
+            <p class="text-sm text-gray-300">&copy; 2026 Portal Horizonte. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

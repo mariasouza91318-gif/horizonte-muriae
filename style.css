@@ -1,0 +1,10 @@
+/* Estilos Customizados Adicionais - Portal Horizonte */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Transições suaves e ajustes globais */
+a {
+    transition: color 0.2s ease-in-out;
+}

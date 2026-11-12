@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Horizonte - Página Inicial</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        horizonteBlue: '#0f2454',
+                        horizonteOrange: '#f97316'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+
+    <!-- Cabeçalho -->
+    <header class="bg-horizonteBlue text-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center space-x-2 mb-4 md:mb-0">
+                <span class="text-2xl font-bold tracking-wider">Portal <span class="text-horizonteOrange">Horizonte</span></span>
+            </div>
+            <nav class="flex space-x-6 text-sm font-medium">
+                <a href="index.html" class="text-horizonteOrange border-b-2 border-horizonteOrange pb-1 transition">Início</a>
+                <a href="nossa-historia.html" class="hover:text-horizonteOrange transition">Nossa História</a>
+                <a href="codigo-etica.html" class="hover:text-horizonteOrange transition">Código de Ética</a>
+                <a href="contato.html" class="hover:text-horizonteOrange transition">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <!-- Destaque Principal -->
+        <section class="mb-12">
+            <div class="relative rounded-xl overflow-hidden shadow-lg bg-horizonteBlue text-white">
+                <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1200&q=80" alt="Notícia Principal" class="w-full h-96 object-cover opacity-60">
+                <div class="absolute bottom-0 left-0 p-6 md:p-10 bg-gradient-to-t from-black/80 to-transparent w-full">
+                    <span class="bg-horizonteOrange text-white text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide">Destaque</span>
+                    <h1 class="text-2xl md:text-4xl font-bold mt-3 mb-2">Tecnologia e Sustentabilidade: O Futuro das Grandes Cidades em Debate</h1>
+                    <p class="text-gray-200 text-sm md:text-base max-w-2xl">Especialistas se reunem para discutir inovações urbanas que prometem transformar a qualidade de vida nos próximos anos.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Últimas Notícias -->
+        <section>
+            <h2 class="text-2xl font-bold text-horizonteBlue mb-6 border-l-4 border-horizonteOrange pl-3">Últimas Notícias</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition flex flex-col">
+                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=600&q=80" alt="Notícia 1" class="h-48 w-full object-cover">
+                    <div class="p-5 flex flex-col flex-grow">
+                        <span class="text-xs text-horizonteOrange font-bold uppercase mb-1">Inovação</span>
+                        <h3 class="font-bold text-lg mb-2 text-horizonteBlue">A expansão da inteligência artificial no mercado corporativo brasileiro</h3>
+                        <p class="text-gray-600 text-sm mb-4 flex-grow">Empresas de todos os portes adotam ferramentas automatizadas para otimizar processos internos.</p>
+                        <a href="#" class="text-horizonteOrange font-semibold text-sm hover:underline self-start">Ler mais &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition flex flex-col">
+                    <img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=600&q=80" alt="Notícia 2" class="h-48 w-full object-cover">
+                    <div class="p-5 flex flex-col flex-grow">
+                        <span class="text-xs text-horizonteOrange font-bold uppercase mb-1">Economia</span>
+                        <h3 class="font-bold text-lg mb-2 text-horizonteBlue">Mercado financeiro reage positivamente às novas diretrizes fiscais</h3>
+                        <p class="text-gray-600 text-sm mb-4 flex-grow">Índices fecham em alta impulsionados pelo setor de serviços e investimentos externos.</p>
+                        <a href="#" class="text-horizonteOrange font-semibold text-sm hover:underline self-start">Ler mais &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition flex flex-col">
+                    <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=600&q=80" alt="Notícia 3" class="h-48 w-full object-cover">
+                    <div class="p-5 flex flex-col flex-grow">
+                        <span class="text-xs text-horizonteOrange font-bold uppercase mb-1">Carreira</span>
+                        <h3 class="font-bold text-lg mb-2 text-horizonteBlue">Habilidades mais buscadas pelos recrutadores no cenário atual</h3>
+                        <p class="text-gray-600 text-sm mb-4 flex-grow">Soft skills e adaptabilidade ganham ainda mais peso nas seleções de emprego modernas.</p>
+                        <a href="#" class="text-horizonteOrange font-semibold text-sm hover:underline self-start">Ler mais &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition flex flex-col">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80" alt="Notícia 4" class="h-48 w-full object-cover">
+                    <div class="p-5 flex flex-col flex-grow">
+                        <span class="text-xs text-horizonteOrange font-bold uppercase mb-1">Cultura</span>
+                        <h3 class="font-bold text-lg mb-2 text-horizonteBlue">O impacto das plataformas de streaming na produção audiovisual independente</h3>
+                        <p class="text-gray-600 text-sm mb-4 flex-grow">Produtores encontram novos caminhos para alcançar públicos globais sem grandes distribuidoras.</p>
+                        <a href="#" class="text-horizonteOrange font-semibold text-sm hover:underline self-start">Ler mais &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Card 5 -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition flex flex-col md:col-span-2 lg:col-span-1">
+                    <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=600&q=80" alt="Notícia 5" class="h-48 w-full object-cover">
+                    <div class="p-5 flex flex-col flex-grow">
+                        <span class="text-xs text-horizonteOrange font-bold uppercase mb-1">Esportes</span>
+                        <h3 class="font-bold text-lg mb-2 text-horizonteBlue">Novas tecnologias de monitoramento mudam a rotina de atletas de elite</h3>
+                        <p class="text-gray-600 text-sm mb-4 flex-grow">Análise de dados em tempo real previne lesões e maximiza o rendimento físico nas competições.</p>
+                        <a href="#" class="text-horizonteOrange font-semibold text-sm hover:underline self-start">Ler mais &rarr;</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-horizonteBlue text-white py-8 mt-12">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-lg font-bold mb-2">Portal <span class="text-horizonteOrange">Horizonte</span></p>
+            <p class="text-sm text-gray-300">&copy; 2026 Portal Horizonte. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

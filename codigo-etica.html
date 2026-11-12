@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Horizonte - Código de Ética</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        horizonteBlue: '#0f2454',
+                        horizonteOrange: '#f97316'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+
+    <!-- Cabeçalho -->
+    <header class="bg-horizonteBlue text-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center space-x-2 mb-4 md:mb-0">
+                <span class="text-2xl font-bold tracking-wider">Portal <span class="text-horizonteOrange">Horizonte</span></span>
+            </div>
+            <nav class="flex space-x-6 text-sm font-medium">
+                <a href="index.html" class="hover:text-horizonteOrange transition">Início</a>
+                <a href="nossa-historia.html" class="hover:text-horizonteOrange transition">Nossa História</a>
+                <a href="codigo-etica.html" class="text-horizonteOrange border-b-2 border-horizonteOrange pb-1 transition">Código de Ética</a>
+                <a href="contato.html" class="hover:text-horizonteOrange transition">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="flex-grow container mx-auto px-4 py-12 max-w-4xl">
+        <h1 class="text-3xl md:text-4xl font-bold text-horizonteBlue mb-4 border-l-4 border-horizonteOrange pl-3">Código de Ética</h1>
+        <p class="text-gray-600 mb-8">Nossos princípios fundamentais norteiam cada apuração, reportagem e publicação realizada em nossa redação.</p>
+
+        <div class="bg-white rounded-xl shadow-md p-6 md:p-10">
+            <ol class="space-y-6 text-gray-700">
+                <li class="flex items-start">
+                    <span class="bg-horizonteOrange text-white font-bold rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0 text-sm">1</span>
+                    <div>
+                        <strong class="text-horizonteBlue block text-lg mb-1">Compromisso com a Verdade</strong>
+                        <p class="text-sm leading-relaxed">Ouvir todas as partes envolvidas antes de publicar fatos e checar rigorosamente a veracidade de qualquer dado ou documento recebido.</p>
+                    </div>
+                </li>
+
+                <li class="flex items-start">
+                    <span class="bg-horizonteOrange text-white font-bold rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0 text-sm">2</span>
+                    <div>
+                        <strong class="text-horizonteBlue block text-lg mb-1">Independência e Isenção</strong>
+                        <p class="text-sm leading-relaxed">Manter absoluta independência em relação a governos, partidos políticos, empresas ou grupos de interesse econômico ou religioso.</p>
+                    </div>
+                </li>
+
+                <li class="flex items-start">
+                    <span class="bg-horizonteOrange text-white font-bold rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0 text-sm">3</span>
+                    <div>
+                        <strong class="text-horizonteBlue block text-lg mb-1">Respeito aos Direitos Humanos</strong>
+                        <p class="text-sm leading-relaxed">Evitar qualquer forma de discriminação baseada em raça, gênero, orientação sexual, religião ou condição socioeconômica nas publicações.</p>
+                    </div>
+                </li>
+
+                <li class="flex items-start">
+                    <span class="bg-horizonteOrange text-white font-bold rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0 text-sm">4</span>
+                    <div>
+                        <strong class="text-horizonteBlue block text-lg mb-1">Correção e Transparência</strong>
+                        <p class="text-sm leading-relaxed">Erros cometidos devem ser corrigidos com rapidez, clareza e destaque proporcional ao erro original, garantindo total transparência com o leitor.</p>
+                    </div>
+                </li>
+
+                <li class="flex items-start">
+                    <span class="bg-horizonteOrange text-white font-bold rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0 text-sm">5</span>
+                    <div>
+                        <strong class="text-horizonteBlue block text-lg mb-1">Proteção de Fontes</strong>
+                        <p class="text-sm leading-relaxed">Garantir o sigilo absoluto da fonte informativa quando houver risco real para a integridade física ou profissional do informante.</p>
+                    </div>
+                </li>
+
+                <li class="flex items-start">
+                    <span class="bg-horizonteOrange text-white font-bold rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0 text-sm">6</span>
+                    <div>
+                        <strong class="text-horizonteBlue block text-lg mb-1">Responsabilidade Social</strong>
+                        <p class="text-sm leading-relaxed">Priorizar conteúdos que eduquem, informem e promovam o debate democrático construtivo na sociedade, combatendo ativamente a desinformação.</p>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-horizonteBlue text-white py-8 mt-12">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-lg font-bold mb-2">Portal <span class="text-horizonteOrange">Horizonte</span></p>
+            <p class="text-sm text-gray-300">&copy; 2026 Portal Horizonte. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
